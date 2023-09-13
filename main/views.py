@@ -16,6 +16,7 @@ def developer(request):
     self_identity = {
         'developer_name': 'Asadilhaq Elqudsi Prabowo',
         'Class': 'PBP B',
+        'app_name': 'fbk1ngautoshop',
     }
 
     return render(request, "developer.html", self_identity)

@@ -9,5 +9,6 @@ class Product(models.Model):
     description = models.TextField()
     Class = models.CharField(max_length=10)
     developer_name = models.CharField(max_length=30)
+    app_name = models.CharField(max_length=30)
     
 
