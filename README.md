@@ -13,10 +13,18 @@ JAWABAN
 
    d.  Membuat sebuah fungsi dalam views.py yang berisikan data diri dan nama toko --> saya membuat fungsi dengan nama 'developer' yang berisikan sebuah list bernama 'self_identity' yang berisikan variabel 'developer_name' dan 'Class'. 
 
-   e. Routing urls.py pada direktori aplikasi 'main' untuk memetakan fungsi dalam views.py --> agar semua fungsi di views.py yang telah saya buat dapat diakses, saya melakukan 
+   e. Routing urls.py pada direktori aplikasi 'main' untuk memetakan fungsi dalam views.py --> agar semua fungsi di views.py yang telah saya buat dapat diakses, saya mengimpor terlebih dahulu fungsi 'stocks' dan 'developer' dari views.py ke dalam urls.py. Kemudian saya membuat dua buah path yaitu '' dan 'developer' dimana dalam path '' menggunakan variabel yang terdapat dalam fungsi 'stocks' sedangkan path 'developer' menggunakan variabel yang terdapat dalam fungsi 'developer'. Variabel-variabel yang ada dalam kedua fungsi tersebut kemudian menggantikan variabel yang ada dalam html masing-masing.
+
+   f. Deployment Adaptable --> Saya nge push terlebih dahulu semua perubahan yang saya lakukan terhadap direktori fbk1ng_autoshop ke dalam repo yang ada di github. Kemudian saya membuat app pada Adaptable dengan menggunakan repositori 'fbk1ng_autoshop' yang menjadi basis app Adaptablenya. Saya menyetting app Adaptable denga menggunakan Python App Template dan PostgreSQL. Versi python yang saya gunakan adalah 3.10 dengan start command "python manage.py migrate && gunicorn gudang_mobil.wsgi" dimana 'gudang_mobil' merupakan direktori proyek saya yang terdapat dalam direktori repositori 'fbk1ng_autoshop'. Untuk finishing, saya men-deploy appnya.
 
 2. 
 
 3. Virtual Environment digunakan agar memungkinkan kita membuat proyek-proyek dan memiliki versi yang berbeda dari proyek tersebut tanpa bertabrakan versi satu dengan yang lainnya. Hal tersebut dapat memudahkan kita saat ingin memperbaiki, manambahkan, dan menguji coba sesuatu dalam proyeknya. Walaupun begitu, tetap memungkinkan untuk membuat sebuah aplikasi django tanpa menggunakan virtual environment.
 
-4. MVC --> MVC terbagi menjadi tiga komponen, yaitu Model-View-Controller. Model bertugas 
+4. MVC --> MVC View, Controller. 
+   MVT --> Model, View, Template. 
+   MVVM --> Model, View, ViewModel. 
+
+   Model : Tugas model dalam semua pola bisa dibilang mirip antara satu sama lain. Model memiliki tugas untuk mendapatkan data-data dari sebuah database yang kemudian digunakan untuk menjalankan sebuah aplikasi atau perangkat lunak
+
+   View : View dalam pola MVC bertugas 

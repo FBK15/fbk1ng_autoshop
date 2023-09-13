@@ -18,4 +18,4 @@ def developer(request):
         'Class': 'PBP B',
     }
 
-    return render(request, 'developer', self_identity)
+    return render(request, "developer.html", self_identity)
