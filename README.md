@@ -5,8 +5,9 @@ PERTANYAAN
 4. Jelaskan apakah itu MVC, MVT, MVVM dan perbedaan dari ketiganya.
 
 JAWABAN
-1. a. Membuat proyek django baru: untuk membuat sebuah proyek django baru, saya mengaktifkan virtual environment dahulu. Kemudian saya membuat file baru seperti requirements.txt yang dibutuhkan untuk bisa memulai sebuah proyek django baru dan menginstallnya terlebih dahulu. Setelah itu, saya membuat projek baru dengan nama gudang_mobil. 
-   b. Membuat aplikasi dengan nama 'main' pada proyek gudang_mobil = saya menggunakan command "python manage.py startapp (nama aplikasi)" pada direktori terluar saya yaitu fbk1ng_autshop untuk membuat aplikasi dengan nama 'main'. Kemudian saya memasukkan aplikasi 'main' ke dalam proyek gudang_mobil dengan cara menuliskan 'main' pada variabel "INSTALLED_APP" dalam file settings.py di direktori proyek gudang_mobil.
+1. a. Membuat proyek django baru: untuk membuat sebuah proyek django baru, saya mengaktifkan virtual environment dahulu. Kemudian saya       membuat file baru seperti requirements.txt yang dibutuhkan untuk bisa memulai sebuah proyek django baru dan menginstallnya terlebih dahulu. Setelah itu, saya membuat projek baru dengan nama gudang_mobil. 
+   b. Membuat aplikasi dengan nama 'main' pada proyek gudang_mobil: saya menggunakan command "python manage.py startapp (nama aplikasi)" pada direktori terluar saya yaitu fbk1ng_autshop untuk membuat aplikasi dengan nama 'main'. Kemudian saya memasukkan aplikasi 'main' ke dalam proyek gudang_mobil dengan cara menuliskan 'main' pada variabel "INSTALLED_APP" dalam file settings.py di direktori proyek gudang_mobil.
+   c. Routing proyek agar dapat menjalankan aplikasi main: Di dalam file 'urls.py' pada direktori aplikasi 'main', saya memasukkan sebuah path 
 
 2. 
 
