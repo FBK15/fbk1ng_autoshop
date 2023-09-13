@@ -5,7 +5,7 @@ PERTANYAAN
 4. Jelaskan apakah itu MVC, MVT, MVVM dan perbedaan dari ketiganya.
 
 JAWABAN
-1. a. Membuat proyek django baru --> untuk membuat sebuah proyek django baru, saya mengaktifkan virtual environment dahulu. Kemudian saya       membuat file baru seperti requirements.txt yang dibutuhkan untuk bisa memulai sebuah proyek django baru dan menginstallnya terlebih dahulu. Setelah itu, saya membuat projek baru dengan nama gudang_mobil. 
+1. a. Membuat proyek django baru --> untuk membuat sebuah proyek django baru, saya mengaktifkan virtual environment dahulu. Kemudian saya    membuat file baru seperti requirements.txt yang dibutuhkan untuk bisa memulai sebuah proyek django baru dan menginstallnya terlebih dahulu. Setelah itu, saya membuat projek baru dengan nama gudang_mobil. 
 
    b. Membuat aplikasi dengan nama 'main' pada proyek gudang_mobil --> saya menggunakan command "python manage.py startapp (nama aplikasi)" pada direktori terluar saya yaitu fbk1ng_autshop untuk membuat aplikasi dengan nama 'main'. Kemudian saya memasukkan aplikasi 'main' ke dalam proyek gudang_mobil dengan cara menuliskan 'main' pada variabel "INSTALLED_APP" dalam file settings.py di direktori proyek gudang_mobil.
 
@@ -27,4 +27,15 @@ JAWABAN
 
    Model : Tugas model dalam semua pola bisa dibilang mirip antara satu sama lain. Model memiliki tugas untuk mendapatkan data-data dari sebuah database yang kemudian digunakan untuk menjalankan sebuah aplikasi atau perangkat lunak
 
-   View : View dalam pola MVC bertugas 
+   View : a. View dalam pola MVC menangani bagaimana tampilan dari aplikasi yang kita sedang kembangkan. Dalam melakukan hal tersebut, View berkaitan dengan controller.
+          
+          b. View dalam pola MVT agak sedikit berbeda tugas nya dengan view dalam pola MVC. View dalam pola MVT bertugas untuk mengelola data yang akan di tampilkan di template.
+
+          c. View dalam pola MVVM memiliki peran yang mirip dengan yang ada di pola MVC.
+
+   Controller : Controller berperan sebagai sebuah jembatan antara Model dan View. Controller menrima sebuah input dari view yang kemudian mengubah model untuk menampilkan sesuai dengan inputnya.
+
+   Template : Template memiliki peran yang mirip dengn view pada pola MVC, yaitu mengatur bagaimana tampilan dari aplikasi.
+   ViewModel : ViewModel berperan sebagai sebuah perantara antara View dan Model.
+
+   Perbedaan antara ketiganya adalah fungsi-fungsi dari komponen polanya.
