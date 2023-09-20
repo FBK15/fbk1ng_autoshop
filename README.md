@@ -1,6 +1,6 @@
 LINK APP ADAPTABLE --> fbk1ngautoshop.adaptable.app/main
 
-
+#  TUGAS 2  #
 PERTANYAAN
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 2. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
@@ -42,3 +42,21 @@ JAWABAN
    ViewModel : ViewModel berperan sebagai sebuah perantara antara View dan Model.
 
    Perbedaan antara ketiganya adalah fungsi-fungsi dari komponen polanya.
+
+   #  TUGAS 3  #
+   PERTANYAAN
+   1. Apa perbedaan antara form POST dan form GET dalam Django?
+   2. Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
+   3. Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
+   4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+   JAWABAN
+   1. Perbedaan antara form POST dan form GET adalah ketika user mengirimkan data formnya. Data yang dikirimkan user melalui form GET akan terpampang jelas dalam URLnya sehingga jumlah data yang dapat diterima dalam form GET terbatas dan form GET hanya daapt menerima tipe data sesuai ASCII. Sedangkan, ketika user mengirimkan data pada form POST, data yang dikirimkan oleh user tidak terpampang jelas di URLnya sehingga form POST tidak memiliki batasan dalam berapa banyaknya jumlah data yang dapat dimasukkan dan jenis data yang dapat diterima oleh form POST bisa apa aja. Dalam hal keamanan, form POST lebih baik daripada form GET karena pada form POST data yang dikirimkan tersimpan dalam "body" permintaan HTTP dan tidak terpampang jelas di URLnya.
+
+   2. XML --> Data yang dikirimkan lebih terstruktur dan tertata rapih. XML didesain agar mesin mudah membacanya. XML pun bisa digunakan untuk menambahkan sebuah catatan pada data-datanya
+      JSON --> Data yang dikirimkan oleh seorang user akan dikirim dengan cara diuraikan menjadi sebuah array yang terlihat simpel dan sederhana daripada xml
+      HTML --> HTML biasanya digunakan untuk menentukan tampilan dan struktur sebuah web. 
+
+   3. Karena format JSON lebih simpel daripada xml dan lebih ringan berat datanya sehingga untuk lebih memudahkan bagi seseorang untuk membacanya.
+
+   4. 
