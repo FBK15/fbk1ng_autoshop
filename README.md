@@ -1,4 +1,4 @@
-LINK APP ADAPTABLE --> fbk1ngautoshop.adaptable.app/main
+LINK APP ADAPTABLE --> fbk1ngautoshop.adaptable.app
 
 #  TUGAS 2  #
 PERTANYAAN
@@ -43,32 +43,66 @@ JAWABAN
 
    Perbedaan antara ketiganya adalah fungsi-fungsi dari komponen polanya.
 
-   #  TUGAS 3  #
-   PERTANYAAN
-   1. Apa perbedaan antara form POST dan form GET dalam Django?
-   2. Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
-   3. Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
-   4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+#  TUGAS 3  #
+PERTANYAAN
+1. Apa perbedaan antara form POST dan form GET dalam Django?
+2. Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
+3. Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
+4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 
-   JAWABAN
-   1. Perbedaan antara form POST dan form GET adalah ketika user mengirimkan data formnya. Data yang dikirimkan user melalui form GET akan terpampang jelas dalam URLnya sehingga jumlah data yang dapat diterima dalam form GET terbatas dan form GET hanya daapt menerima tipe data sesuai ASCII. Sedangkan, ketika user mengirimkan data pada form POST, data yang dikirimkan oleh user tidak terpampang jelas di URLnya sehingga form POST tidak memiliki batasan dalam berapa banyaknya jumlah data yang dapat dimasukkan dan jenis data yang dapat diterima oleh form POST bisa apa aja. Dalam hal keamanan, form POST lebih baik daripada form GET karena pada form POST data yang dikirimkan tersimpan dalam "body" permintaan HTTP dan tidak terpampang jelas di URLnya.
+JAWABAN
+1. Perbedaan antara form POST dan form GET adalah ketika user mengirimkan data formnya. Data yang dikirimkan user melalui form GET akan terpampang jelas dalam URLnya sehingga jumlah data yang dapat diterima dalam form GET terbatas dan form GET hanya daapt menerima tipe data sesuai ASCII. Sedangkan, ketika user mengirimkan data pada form POST, data yang dikirimkan oleh user tidak terpampang jelas di URLnya sehingga form POST tidak memiliki batasan dalam berapa banyaknya jumlah data yang dapat dimasukkan dan jenis data yang dapat diterima oleh form POST bisa apa aja. Dalam hal keamanan, form POST lebih baik daripada form GET karena pada form POST data yang dikirimkan tersimpan dalam "body" permintaan HTTP dan tidak terpampang jelas di URLnya.
 
-   2. XML --> Data yang dikirimkan lebih terstruktur dan tertata rapih. XML didesain agar mesin mudah membacanya. XML pun bisa digunakan untuk menambahkan sebuah catatan pada data-datanya
+2. XML --> Data yang dikirimkan lebih terstruktur dan tertata rapih. XML didesain agar mesin mudah membacanya. XML pun bisa digunakan untuk menambahkan sebuah catatan pada data-datanya
       JSON --> Data yang dikirimkan oleh seorang user akan dikirim dengan cara diuraikan menjadi sebuah array yang terlihat simpel dan sederhana daripada xml
       HTML --> HTML biasanya digunakan untuk menentukan tampilan dan struktur sebuah web. 
 
-   3. Karena format JSON lebih simpel daripada xml dan lebih ringan berat datanya sehingga untuk lebih memudahkan bagi seseorang untuk membacanya.
+3. Karena format JSON lebih simpel daripada xml dan lebih ringan berat datanya sehingga untuk lebih memudahkan bagi seseorang untuk membacanya.
 
-   4. 
+4. 
 
-   XML
-   ![Alt text](image-1.png)
+XML
+![Alt text](image-1.png)
 
-   JSON
-   ![Alt text](image-2.png)
+JSON
+![Alt text](image-2.png)
 
-   XML by id
-   ![Alt text](image-4.png)
+XML by id
+![Alt text](image-4.png)
    
-   JSON by id
-   ![Alt text](image-3.png)
+JSON by id
+![Alt text](image-3.png)
+
+
+# TUGAS 4 #
+PERTANYAAN
+1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+3. Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
+4. Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+JAWABAN
+1. Django UserCreationForm adalah sebuah sistem autentikasi yang sudah ada atau built-in di dalam django. Untuk dapat menggunakan UserCreationForm, hanya diperlukan beberapa baris kode sehingga cukup simpel untuk menggunakannya dimana hal ini menjadi kelebihan dari UserCreationForm built-in django. Kekurangan dari UserCreationForm ini terdapat pada tampilannya yang sangat sederhana dan fiturnya yang sedikit (hanya username, password, dan konfirmasi password)
+
+2. Autentikasi --> proses verifikasi pengguna seperti username dan password
+   Otorisasi   --> pemberian izin kepada seseorang untuk dapat mengakses suatu data tertentu
+
+   Kedua hal itu jika dikombinasikan maka akan menciptakan sebauh sistem keamanan data yang sangat kuat sehingga dpat mencegah seperti kebocoran data ke pihak yang tidak diinginkan. Gabungan keduanya sangatlah penting agar data-data yang disimpan dapat tersimpan dengan baik dan tetap rahasia.
+
+3. Cookies merupakan sebuah data atau file yang dikirimkan ke server agar segala kegiatan pengguna di server atau web tersebut dapat dipantau. 
+
+4. 
+
+5. a. Mengimplementasikan fungsi registrasi, login, dan logout untuk memungkinkan pengguna untuk mengakses aplikasi sebelumnya dengan lancar: Saya membuat sebauh fungsi untuk registrasi yaitu register_user menggunakan fitur built-in django yaitu UserCreationForm dengan metode POST agar data pengguna tetap rahasia. Lalu saya menmbuat fungsi login yaitu login_user dimana pengguna
+harus memasukkan password dan username lalu hasil inputnya akan di kirim secara POST. Dan terakhir ada fungsi logout dimana ketika pengguna menekan tombol oogout akan langsung ke redirect ke 
+halaman login.
+
+   b. Username: Miorine
+      ![Alt text](image-5.png)
+
+      Username: Shikimori
+      ![Alt text](image-8.png)
+
+   c. 
+
