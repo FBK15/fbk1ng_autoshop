@@ -3,10 +3,10 @@
 {% block content %}
     <h1>FBK1NG AutoShop</h1>
 
-    <h5>Developer Name: </h5>
-    <p>{{ developer_name }}</p> 
+    <h5>Name: </h5>
+    <p>{{ username }}</p> 
     <h5>Class: </h5>
-    <p>{{ developer_class }}</p>
+    <p>{{ user_class }}</p>
     
 
     <table>
@@ -27,6 +27,19 @@
                 <td>{{product.price}}</td>
                 <td>{{product.amount}}</td>
                 <td>{{product.description}}</td>
+                <td>
+                    <a href="{% url 'main:edit_product' product.pk %}">
+                        <button>
+                            Edit
+                        </button>
+                    </a>
+                    <a href="{% url 'main:delete_product' product.pk %}">
+                        <button>
+                            Delete
+                        </button>
+                    </a>
+                </td>
+
             </tr>
         {% endfor %}
     </table>

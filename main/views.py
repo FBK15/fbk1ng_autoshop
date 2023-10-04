@@ -18,11 +18,11 @@ def main_data(request):
     developer = Developer.objects.all()
 
     data = {
-        'developer_name': request.user.username,
-        'developer_class': 'PBP B',
+        'username': request.user.username,
+        'user_class': 'PBP B',
         'developer': developer,
         'products': products,
-        'last_login': request.COOKIES['last_login'],
+        #'last_login': request.COOKIES['last_login'],
     }
 
     return render(request, "main.html", data)
@@ -86,3 +86,18 @@ def logout_user(request):
     logout(request)
     return redirect('main:login')
 
+def edit_product(request, id):
+    product = Product.objects.get(pk = id)
+    form = ProductForm(request.POST or None, instance=product)
+
+    if form.is_valid() and request.method == "POST":
+        form.save()
+        return HttpResponseRedirect(reverse('main:main_data'))
+
+    context = {'form': form}
+    return render(request, "edit_product.html", context)
+
+def delete_product(request, id):
+    product = Product.objects.get(pk = id)
+    product.delete()
+    return HttpResponseRedirect(reverse('main:main_data'))
