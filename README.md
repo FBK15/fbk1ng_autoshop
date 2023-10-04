@@ -106,3 +106,31 @@ halaman login.
 
    c. 
 
+
+# TUGAS 5 #
+PERTANYAAN
+1. Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+2. Jelaskan HTML5 Tag yang kamu ketahui.
+3. Jelaskan perbedaan antara margin dan padding.
+4. Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+JAWABAN
+1. Element selector memberi kita kemudahan jika kita ingin mengkustomisasi suatu elemen atau beberapa elemen yang sama di html karena kita tidak perlu mendefiniskan secara khusus dengan menggunakan id atau class. Element selector juga cukup praktis karena tidak perlu mengetik dengan panjang untuk dapat mengkustomisasi elemen-elemen yang ada di htmlnya. Element selector cocok untuk digunakan jika kita hanya ingin mengkustomisasi elemen-elemen di html secara general dan tidak perlu spesifik (setiap elemen beda-beda warnanya misalnya).
+
+2. <a> = untuk menandakan sebuah hyperlink
+   <table> = untuk menampilkan data di html dalam bentuk tabel
+   <tr> = row tabel
+   <th> = header untuk tabel
+   <p> = untuk menandai sebuah data sebagai paragraf
+   <td> = kolom tabel
+   <button> = untuk membuat sebuah tombol yang bisa di pencet
+   <input> = untuk membuat tempat menginput sesuatu
+   <h1>-<h6> = untuk menandai header HTML
+   
+3. Perbedaan antara margin dan padding adalah kalau margin mengatur pixel/jarak/ruang antara border dan luarannya sedangkan padding mengatur pixel/jarang/ruang antara konten dengan border nya
+
+4. Perbedaan antara CSS Tailwind dan Bootstrap terletak pada penggunaannya. Tailwind cocok digunakan jika menginginkan sebuah kustomisasi yang sangat detail sedangkan bootstrap cocok untuk digunakan jika pengguna merupakan seorang pemula karena di bootstrap sudah disediakan semacam built-in utility yang bisa digunakan untuk kustomisasi secara simpel.
+
+
+
