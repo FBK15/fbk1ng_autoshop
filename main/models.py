@@ -11,7 +11,7 @@ class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Developer(models.Model):
-    username = models.CharField(max_length=20)
+    username = models.CharField(max_length=20, null=True)
     user_class = models.CharField(max_length=20)
     
     
